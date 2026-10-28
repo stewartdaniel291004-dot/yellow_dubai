@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+} */
+
+.custom-calendar .react-calendar__tile.react-calendar__tile--now {
+  background: #fff !important;
+  color: #6F6F6F !important;
+}
+
+.custom-calendar .react-calendar__tile.react-calendar__tile--active {
+  background: #fae7dd !important;
+  color: #6F6F6F !important;
+  border-radius: 50%;
+}
+
+.custom-calendar.react-calendar__month-view__days__day--weekend {
+  color: #6F6F6F  !important;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays {
+  color: #6B7280 !important;
+  font-weight: 400 !important;
+  border: none !important;
+
+}
+.custom-calendar .react-calendar__tile.react-calendar__month-view__days__day{
+  color: #6F6F6F  !important;
+}
+.react-calendar__tile.react-calendar__month-view__days__day {
+  color: #6B7280; /* Replace with the desired color */
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+
+@font-face {
+  font-family: 'Hoogfont';
+  src: url('/assets/fonts/hoog0555_cyr2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'radiofont';
+  src: url('/assets/fonts/Radio/radio/RadioRadio.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

@@ -1,0 +1,51 @@
+.scroller-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #393939;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0px;
+    position: relative;
+  }
+  
+  .scroller-wrapper {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .scroller-text {
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFC40E;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-right: 10px;
+    animation: scroll 50s linear 0s infinite forwards;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .scroller-container {
+      padding: 20px 0;
+      margin: 20px 0;
+    }
+  
+    .scroller-text {
+      font-size: 30px;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
